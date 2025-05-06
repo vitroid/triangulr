@@ -2,6 +2,7 @@ const path = require("path");
 const { VueLoaderPlugin } = require("vue-loader");
 const webpack = require("webpack");
 const TerserPlugin = require("terser-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: process.env.NODE_ENV,
@@ -54,7 +55,15 @@ module.exports = {
       },
     ],
   },
-  plugins: [new VueLoaderPlugin()],
+  plugins: [
+    new VueLoaderPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "index.html", to: "index.html" },
+        { from: "assets", to: "assets" },
+      ],
+    }),
+  ],
   resolve: {
     extensions: [".js", ".vue", ".json"],
     alias: {
