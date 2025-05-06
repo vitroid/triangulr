@@ -1,8 +1,13 @@
 .palette {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
+    width: 120px; /* 16px * 6 */
+    padding: 0;
+    margin:0;
+    border:none;
+    /* justify-content: start; */
+    align-content: flex-start;
     gap: 0;
-    padding: 8px;
   }
   
   .palette-color {
@@ -10,13 +15,18 @@
     height: 16px;
     border-radius: 0;
     cursor: pointer;
-    border: 1px solid #ccc;
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    gap: 0;
+    /* 1行6個で折り返し */
+    /* flex: 0 0 16px; */
   }
-  
   .palette-color:hover {
-    transform: scale(1.1);
+    outline: 1px solid #000;
   }
   
   .palette-color.active {
-    border: 2px solid #000;
+    outline: 2px solid #000;
   }

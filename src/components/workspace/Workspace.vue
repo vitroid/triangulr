@@ -1,7 +1,7 @@
 <template>
   <div style="display: flex; height: 100vh;">
     <div ref="playground" class="playground" style="flex: 1;"></div>
-    <div id="palette-container" style="width: 240px;"></div>
+    <div id="palette-container" class="palette"></div>
     <toolbar :playground="playground" :workspace="workspace" :current-color="currentColor"/>
   </div>
 </template>
