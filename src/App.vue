@@ -18,6 +18,8 @@ import Triangulr from './services/triangulr.js'
 import Launcher from './components/launcher/Launcher.vue'
 import Workspace from './components/workspace/Workspace.vue'
 
+import '@/styles/palette.css'
+
 export default {
   name: 'app',
   components: {

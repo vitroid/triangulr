@@ -9,7 +9,7 @@ const SVG_NAMESPACE = "http://www.w3.org/2000/svg";
  */
 function Triangulr() {}
 
-Triangulr.prototype.BGR_COLOR = "#FFFFFF";
+Triangulr.prototype.BGR_COLOR = "#ccc";
 Triangulr.prototype.DEFAULT_FILL_COLOR = "#000000";
 Triangulr.prototype.BLANK_COLOR = "none";
 Triangulr.prototype.AUTOSAVE_TIMER = 5000;
