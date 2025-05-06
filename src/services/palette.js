@@ -1,7 +1,7 @@
-// Webカラー（256色）を生成する関数
+// Web safe color（216色）を生成する関数
 function generateWebColors() {
   const colors = [];
-  const steps = [0, 32, 64, 96, 128, 160, 192, 224, 255];
+  const steps = [0, 51, 102, 153, 204, 255];
 
   for (let r of steps) {
     for (let g of steps) {
@@ -38,13 +38,8 @@ export class PaletteService {
     this.container.innerHTML = "";
     this.colors.forEach((color) => {
       const colorElement = document.createElement("div");
+      colorElement.className = "palette-color";
       colorElement.style.backgroundColor = color;
-      colorElement.style.width = "20px";
-      colorElement.style.height = "20px";
-      colorElement.style.margin = "2px";
-      colorElement.style.display = "inline-block";
-      colorElement.style.cursor = "pointer";
-      colorElement.style.border = "1px solid #ccc";
       colorElement.addEventListener("click", () => {
         if (this.onColorSelect) {
           this.onColorSelect(color);
