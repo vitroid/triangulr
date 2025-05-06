@@ -1,7 +1,7 @@
 // Webカラー（256色）を生成する関数
 function generateWebColors() {
   const colors = [];
-  const steps = [0, 51, 102, 153, 204, 255];
+  const steps = [0, 32, 64, 96, 128, 160, 192, 224, 255];
 
   for (let r of steps) {
     for (let g of steps) {
