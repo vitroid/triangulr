@@ -64,6 +64,9 @@ module.exports = {
       {
         test: /\.(png|jpg|gif|svg)$/,
         type: "asset/resource",
+        generator: {
+          filename: "assets/[name][ext]",
+        },
       },
     ],
   },
@@ -101,6 +104,7 @@ module.exports = {
         { from: "favicon.ico", to: ".", noErrorOnMissing: true },
         { from: "icons", to: "icons", noErrorOnMissing: true },
         { from: "ios-startup", to: "ios-startup", noErrorOnMissing: true },
+        { from: "assets", to: "assets", noErrorOnMissing: true },
       ],
     }),
     new VueLoaderPlugin(),

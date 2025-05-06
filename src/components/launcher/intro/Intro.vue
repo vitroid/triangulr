@@ -1,7 +1,7 @@
 <template>
   <div class="launcher-content">
     <div class="row row-inline">
-      <object data="assets/vectors/triangulart_logo.svg" type="image/svg+xml" class="intro-logo"></object>
+      <object data="/triangulr/assets/vectors/triangulart_logo.svg" type="image/svg+xml" class="intro-logo"></object>
       <div>
         <h1>triangulart <small>[vxxxx beta]</small></h1>
         <p>Graphic editor to create isometric illustrations, it's like pixel art but with triangles.<br>
