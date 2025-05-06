@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 186 136">
+	<path class="d_1" d="M33,3L18,29h30L33,3z" />
+	<path class="d_1" d="M33,3l15,26L63,3H33z" />
+	<path class="d_2" d="M63,3L48,29h30L63,3z" />
+	<path class="d_2" d="M63,3l15,26L93,3H63z" />
+	<path class="d_3" d="M93,3L78,29h30L93,3z" />
+	<path class="d_3" d="M93,3l15,26l15-26H93z" />
+	<path class="d_4" d="M123,3l-15,26h30L123,3z" />
+	<path class="d_4" d="M123,3l15,26l15-26H123z" />
+	<path class="d_5" d="M153,3l-15,26h30L153,3z" />
+	<path class="d_1" d="M18,29L3,55h30L18,29z" />
+	<path class="d_1" d="M18,29l15,26l15-26H18z" />
+	<path class="d_5" d="M138,29l15,26l15-26H138z" />
+	<path class="d_6" d="M168,29l-15,26h30L168,29z" />
+	<path class="d_1" d="M3,55l15,26l15-26H3z" />
+	<path class="d_2" d="M33,55L18,81h30L33,55z" />
+	<path class="d_3" d="M63,55L48,81h30L63,55z" />
+	<path class="d_5" d="M123,55l-15,26h30L123,55z" />
+	<path class="d_6" d="M153,55l-15,26h30L153,55z" />
+	<path class="d_6" d="M153,55l15,26l15-26H153z" />
+	<path class="d_2" d="M18,81l15,26l15-26H18z" />
+	<path class="d_3" d="M48,81l-15,26h30L48,81z" />
+	<path class="d_3" d="M48,81l15,26l15-26H48z" />
+	<path class="d_4" d="M78,81l-15,26h30L78,81z" />
+	<path class="d_5" d="M108,81l-15,26h30L108,81z" />
+	<path class="d_5" d="M108,81l15,26l15-26H108z" />
+	<path class="d_6" d="M138,81l-15,26h30L138,81z" />
+	<path class="d_6" d="M138,81l15,26l15-26H138z" />
+	<path class="d_4" d="M63,107l15,26l15-26H63z" />
+	<path class="d_5" d="M93,107l-15,26h30L93,107z" />
+	<path class="d_5" d="M93,107l15,26l15-26H93z" />
+
+	<style>
+		@keyframes shade {
+			0%   {stroke: #605;}
+			10%  {stroke: #605;}
+			22%  {stroke: #f05;}
+			36%  {stroke: #005;}
+			50%  {stroke: #605;}
+			100% {stroke: #605;}
+		}
+
+		@keyframes rainbow {
+			0%   {stroke: #605;}
+			7%   {stroke: #605;}
+
+			10%   {stroke: #E40303;}
+			13%   {stroke: #FF8C00;}
+			16%   {stroke: #FFED00;}
+			19%   {stroke: #008026;}
+			22%   {stroke: #004DFF;}
+			25%   {stroke: #750787;}
+
+			28%  {stroke: #605;}
+			100% {stroke: #605;}
+		}
+
+
+		.d_1, .d_2, .d_3, .d_4, .d_5, .d_6 {
+			stroke-linejoin:round;
+			stroke-miterlimit:10;
+			stroke-width: 5px;
+			fill: none;
+			stroke: #605;
+		}
+
+		.d_1 { animation: rainbow 12s infinite; }
+		.d_2 { animation: rainbow 12s infinite .2s; }
+		.d_3 { animation: rainbow 12s infinite .4s; }
+		.d_4 { animation: rainbow 12s infinite .6s; }
+		.d_5 { animation: rainbow 12s infinite .8s; }
+		.d_6 { animation: rainbow 12s infinite  1s; }
+	</style>
+</svg>
