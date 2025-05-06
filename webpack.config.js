@@ -43,8 +43,10 @@ module.exports = {
               implementation: require("sass"),
               sassOptions: {
                 quietDeps: true,
+                outputStyle: "compressed",
               },
               warnRuleAsWarning: false,
+              sourceMap: true,
             },
           },
         ],
